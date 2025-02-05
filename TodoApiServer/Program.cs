@@ -15,7 +15,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ToDoDbContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("ToDoDB"), ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("ToDoDB"))));
+    options.UseMySql(builder.Configuration.GetConnectionString("bi4kftrfqemg0amvmvxu"), ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("bi4kftrfqemg0amvmvxu"))));
 var app = builder.Build();
 app.UseCors("AllowAllOrigins");
 app.MapGet("/", () => "API is running");
