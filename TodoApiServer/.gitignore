@@ -8,7 +8,10 @@
 #.env/
 # dotenv files
 .env
-
+#.vs/
+#.vscode/
+#bin/
+#obj/
 # User-specific files
 *.rsuser
 *.suo
