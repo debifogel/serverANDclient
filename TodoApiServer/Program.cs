@@ -18,7 +18,7 @@ builder.Services.AddDbContext<ToDoDbContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("ToDoDB"), ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("ToDoDB"))));
 var app = builder.Build();
 app.UseCors("AllowAllOrigins");
-
+app.MapGet("/", () => "API is running");
 app.MapGet("/item", async(ToDoDbContext _service) => await Task.FromResult(_service.Items));
 app.MapPost("/item", async ([FromBody] string task, ToDoDbContext _service) =>
 {
