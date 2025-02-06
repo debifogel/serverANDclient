@@ -49,8 +49,7 @@ app.MapDelete("/item/{taskId}", async(int taskId, ToDoDbContext _service) =>
   return Results.NotFound();
 });
 
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
     app.UseSwaggerUI(
 options => // יוצר את הממשק של Swagger UI
@@ -59,5 +58,5 @@ options => // יוצר את הממשק של Swagger UI
         options.RoutePrefix = string.Empty; // מציג את Swagger ב-root של האפליקציה
     });
     
-}
+
 app.Run();
