@@ -1,4 +1,4 @@
-
+#node/.api/
 #docker-compose.debug.yml
 #docker-compose.yml
 ## Ignore Visual Studio temporary files, build results, and
