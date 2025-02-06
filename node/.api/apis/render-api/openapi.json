@@ -10,6 +10,9 @@
       "email": "support@render.com"
     }
   },
+  "engines": {
+  "node": "22.12.0"
+},
   "x-readme": {
     "metrics-enabled": false
   },
