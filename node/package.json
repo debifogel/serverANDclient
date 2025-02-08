@@ -4,6 +4,6 @@
     "@api/render-api": "file:.api/apis/render-api"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node ./.api/index.js"
   }
 }
